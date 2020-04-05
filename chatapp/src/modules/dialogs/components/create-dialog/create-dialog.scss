@@ -1,0 +1,25 @@
+.dialog-create {
+  position: relative;
+  height: 30px;
+  
+  &__title {
+    position: absolute;
+    top: 3px;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  button {
+    position: absolute;
+    right: 15px;
+  }
+
+}
+
+.ant-modal-footer {
+  border-top: none !important;
+}
+
+.ant-modal .ant-input {
+  margin-top: 15px;
+}

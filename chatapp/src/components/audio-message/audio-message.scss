@@ -1,0 +1,51 @@
+@import 'src/styles/variables.scss';
+
+.audio-message {
+  .message {
+    position: relative;
+
+    &__content--text {
+      position: relative;
+      display: flex;
+      min-width: 300px;
+      align-items: center;
+      overflow: hidden;
+
+      .anticon {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+        z-index: 20;
+      }
+    }
+  
+    &__content--duration {
+      width: 100%;
+      text-align: right;
+      padding-left: 10px;    
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  
+    &__process {
+      position: absolute;
+      width: 10px;
+      height: 43px;
+      top: 0px;
+      left: 0px;
+      z-index: 3;
+      opacity: 0.2;
+      background-color: #808080;
+      transition-property: width;
+      transition-duration: 1s;
+    }
+  }
+}
+
+.dark {
+  .message__process {
+    background-color: #fff;
+    opacity: 0.2;
+  }
+}

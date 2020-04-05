@@ -1,0 +1,45 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  
+  &__header {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 0.1px;
+      opacity: 0.5;
+    }
+  }
+
+  &__content {
+    margin-top: 30px;
+  }
+
+  .card {
+    min-width: 430px;
+    width: 100%;
+    padding-top: 15px;
+    border: none;
+  }
+
+  .button {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .register__link {
+    color: #adadad;
+  }
+}
+
+
+

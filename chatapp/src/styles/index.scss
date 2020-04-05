@@ -1,0 +1,43 @@
+@import '~antd/dist/antd.min.css';
+@import 'src/styles/variables.scss';
+
+#root, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: $light-grey;
+
+  &__header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 20;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05);
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $light-grey;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136,136,136, 0.3);
+    opacity: 0.6;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(136,136,136, 0.6);
+  }
+}

@@ -1,0 +1,32 @@
+.fileuplader__content {
+	.filechooser {
+		height: 0;
+		opacity: 0;
+	}
+	.filelist {
+		li {
+			list-style: none;
+			position: relative
+		}
+		li span {
+			display: inline-block;
+			min-width: 120px;
+		}
+		li:before {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: -15px;
+			display: inline-block;
+			height: 12px;
+			width: 12px;
+			margin-right: 5px;
+			background-image: url('/assets/attach_icon2.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+	.drop_icon {
+		margin-left: 5px;
+	}
+}

@@ -1,0 +1,10 @@
+@import 'src/styles/variables.scss';
+
+.messages {
+  position: absolute;
+  left: 0;
+  height: calc(100% - 155px);
+  width: calc(100% - 30px);
+  overflow-y: scroll;
+  padding-left: 20px;
+}
